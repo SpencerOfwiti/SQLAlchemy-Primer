@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Table
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('postgresql://postgres:casablanca@localhost/sqltest', echo=True)
+engine = create_engine('postgresql://postgres:postgres@localhost/sqltest', echo=True)
 Session = sessionmaker(bind=engine)
 Base = declarative_base()
 
